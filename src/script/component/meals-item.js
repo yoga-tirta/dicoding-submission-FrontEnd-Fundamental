@@ -37,7 +37,8 @@ class MealsItem extends HTMLElement {
         }
       
         .meals-info > h2 {
-          font-weight: lighter;
+          font-weight: bold;
+          color: #ff9900;
         }
       
         .meals-info > p {
