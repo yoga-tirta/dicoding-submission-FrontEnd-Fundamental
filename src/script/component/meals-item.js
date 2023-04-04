@@ -53,7 +53,10 @@ class MealsItem extends HTMLElement {
 
       <img class="meals" src="${this._meals.strMealThumb}" alt="Gambar Makanan">
       <div class="meals-info">
-        <h2>${this._meals.strMeal}</h2>
+        <h2>${this._meals.strMeal}</h2> <br>
+        <h4>Category : ${this._meals.strCategory}</h4>
+        <h4>Country : ${this._meals.strArea}</h4>
+        <p>Instruction :</p>
         <p>${this._meals.strInstructions}</p>
       </div>`;
   }
