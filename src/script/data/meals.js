@@ -1,7 +1,3 @@
-const meals = [
-    {
-
-    }
-];
+const meals = [{}];
 
 export default meals;
