@@ -31,7 +31,8 @@ class MealsList extends HTMLElement {
           -ms-user-select: none;
           user-select: none;
         }
-      </style>`;
+      </style>
+    `;
     this.shadowDOM.innerHTML += `<h2 class="placeholder">${message}</h2>`;
   }
 }

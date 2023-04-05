@@ -19,10 +19,14 @@ class MealsItem extends HTMLElement {
         }
         :host {
           display: block;
-          margin-bottom: 18px;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin-bottom: 20px;
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
           border-radius: 10px;
           overflow: hidden;
+        }
+
+        .item {
+          background-color:#FFDEB4;
         }
       
         .meals {
@@ -30,15 +34,17 @@ class MealsItem extends HTMLElement {
           max-height: 300px;
           object-fit: cover;
           object-position: center;
+          color: red;
         }
       
         .meals-info {
           padding: 24px;
         }
       
-        .meals-info > h2 {
+        .meals-info > h1 {
           font-weight: bold;
           color: #ff9900;
+          text-align:center
         }
       
         .meals-info > p {
@@ -51,14 +57,17 @@ class MealsItem extends HTMLElement {
         }
       </style>
 
-      <img class="meals" src="${this._meals.strMealThumb}" alt="Gambar Makanan">
-      <div class="meals-info">
-        <h2>${this._meals.strMeal}</h2> <br>
-        <h4>Category : ${this._meals.strCategory}</h4>
-        <h4>Country : ${this._meals.strArea}</h4>
-        <p>Instruction :</p>
-        <p>${this._meals.strInstructions}</p>
-      </div>`;
+      <div class="item">
+        <img class="meals" src="${this._meals.strMealThumb}" alt="Meal Thumnail">
+        <div class="meals-info">
+          <h1>${this._meals.strMeal}</h1>
+          <h4>Category : ${this._meals.strCategory}</h4>
+          <h4>Country : ${this._meals.strArea}</h4>
+          <p>Instruction :</p>
+          <p>${this._meals.strInstructions}</p>
+        </div>
+      </div>
+    `;
   }
 }
 

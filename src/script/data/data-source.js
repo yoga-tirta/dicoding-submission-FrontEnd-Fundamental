@@ -10,7 +10,7 @@ class DataSource {
         if (responseJson.meals) {
           return Promise.resolve(responseJson.meals);
         } else {
-          return Promise.reject(`${keyword} Tidak tersedia`);
+          return Promise.reject(`${keyword} is Not Found in database`);
         }
       });
   }

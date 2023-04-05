@@ -13,8 +13,13 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #eff5f5;
+  font-family: "Poppins", sans-serif;
+  background-color: #FDF7C3;
+}
+
+header {
+  display: inline;
+  text-align: center;
 }
 
 main {
