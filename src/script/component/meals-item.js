@@ -26,7 +26,7 @@ class MealsItem extends HTMLElement {
         }
 
         .item {
-          background-color:#FFDEB4;
+          background-color: #FFDEB4;
         }
       
         .meals {
@@ -34,7 +34,6 @@ class MealsItem extends HTMLElement {
           max-height: 300px;
           object-fit: cover;
           object-position: center;
-          color: red;
         }
       
         .meals-info {
